@@ -1,0 +1,5 @@
+package com.egc.ExternalAPIs.copy;
+
+public class SMTPclientIntegration {
+
+}

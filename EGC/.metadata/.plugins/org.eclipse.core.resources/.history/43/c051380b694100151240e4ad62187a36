@@ -1,0 +1,5 @@
+package com.egc.responseServer.copy;
+
+public class LoginResponse {
+
+}
