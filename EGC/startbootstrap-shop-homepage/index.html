@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Electronic Gift Card</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="./popUp/demo/css/jquery.popup.css" type="text/css">
+
+</head>
+
+<body background="White-christmas-light-background.jpg">
+<div class="p_body js__p_body js__fadeout"></div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <img width =120 height= 50 src="logo.png" alt="" >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li >
+                        <a href="todaysDeal.html">Today's Deal</a>
+                     <li>
+                        <a href="aboutUs.html">About Us</a>
+                    </li> <li>
+                        <a href="contactUs.html">Contact US</a>
+                    </li> 
+                    </ul>
+          
+          
+          <form class="navbar-form navbar-right" action="signup.html">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button  onclick="GetAlert();" class="btn btn-success">Sign in</button>
+            <!--<button type="submit"  class="btn btn-success">Sign up</button>-->
+            
+            <button href="#" type="submit"  class="btn btn-success js__p_start">Sign up</button>
+            <!--<a href="#" class="js__p_start">Dmo1</a>-->
+            <div class="popup js__popup js__slide_top"> 
+            <a href="#" class="p_close js__p_close" title="Close"> <span></span><span></span> </a>
+            <div class="p_content"></div>
+            </div>
+
+            <!--<img href="cart.html" width =60 height= 40 src="empty-cart-dark.png" alt="" > -->
+            <!--<a href="cart.html" >cart</a> -->
+            <!--<button type="button"  onclick="cart.html">cart</button>-->
+            <img onclick="location.href='cart.html';" width =60 height= 40 src="empty-cart-dark.png" alt="" >
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+
+
+          </form>
+          
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- Page Content -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                 <img class="slide-image" src="Suning-logo-880x625.png" alt="">
+
+                <p class="lead">Shop Now</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item" onclick="location.href='SelectCard.html';">Select card</a>
+                    <a href="test.html" class="list-group-item" onclick="test.html';">Personalize card</a>
+                    <a href="customizeCard.html" class="list-group-item" onclick="test.html';">Create a new card</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="toys-gifts-l.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="Untitled-800x300.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="Christmas Decor 6 narrow.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="padding-left: 0px;">
+                <div class="input-group" id="adv-search", style="width: 800px;">
+                    <input type="text" class="form-control" placeholder="Search for Gift Cards" />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group" style="width: 750px; margin-left: 10px";>
+                                        <label for="filter">Filter by</label>
+                                        <select class="form-control" style="width: 700px;">
+                                            <option value="0" selected>All Gift Cards</option>
+                                            <option value="1">Featured</option>
+                                            <option value="2">Most popular</option>
+                                            <option value="3">Top rated</option>
+                                            <option value="4">Most commented</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group" style="width: 700px;margin-left: 10px";>
+                                        <label for="contain">Birthday</label>
+                                        <input class="form-control" type="text" />
+                                      </div>
+                                      <div class="form-group" style="width: 700px;margin-left: 10px";>
+                                        <label for="contain">Marriage</label>
+                                        <input class="form-control" type="text"/>
+                                      </div>
+                                      <!-- <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>-->
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                         </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    </div>
+
+        <br>
+
+        <br>
+
+            <div class="row" style="margin-left: +10px;">
+                <h2>Some recommendation for you</h2>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail" style="width: 302px; height: 352;">
+                            <a href="inner.html"><img width="80" height="80" src="target-gift-card.png" alt=""></a>
+                           <!-- <img src="http://placehold.it/320x150" alt=""> -->
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4><a href="#">First Product</a>
+                                </h4>
+                                <p>See more snippets like this online store item at <a target="_blank" href="#"></a>.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail" style="width: 302px; height: 352;">
+                            <img width="80" height="80" src="gift-card.gif" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$64.99</h4>
+                                <h4><a href="#">Second Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail" style="width: 302px; height: 332;">
+                            <img width="80" height="80" src="img2.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$74.99</h4>
+                                <h4><a href="#">Third Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail" style="width: 302px; height: 352;">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$84.99</h4>
+                                <h4><a href="#">Fourth Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail" style="width: 302px; height: 352;">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$94.99</h4>
+                                <h4><a href="#">Fifth Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <p>Found what you want? We have some more recommendations for you.</p>
+                        <a class="btn btn-primary" target="_blank" href="index.html">View More</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; San Jose State University(TEAM-TITANS)</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./popUp/demo/js/jquery.popup.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".js__p_start").simplePopup();
+        });
+    </script>
+</body>
+
+</html>

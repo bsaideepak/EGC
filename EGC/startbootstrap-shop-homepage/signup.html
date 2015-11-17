@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Electronic Greeting Card</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body background="White-christmas-light-background.jpg">
+
+    </nav>-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <img width =120 height= 50 src="logo.png" alt="" >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li >
+                        <a href="todaysDeal.html">Today's Deal</a>
+                     <li>
+                        <a href="aboutUs.html">About Us</a>
+                    </li> <li>
+                        <a href="contactUs.html">Contact US</a>
+                    </li>  
+                    </ul>
+          
+          
+          <form class="navbar-form navbar-right" action="signup.html">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button  onclick="GetAlert();" class="btn btn-success">Sign in</button>
+            
+             <button type="submit"  class="btn btn-success">Sign up</button>
+          </form>
+          
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+	 
+
+<div class="" id="loginModal">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3>Have an Account?</h3>
+	</div>
+	<div class="modal-body">
+		<div class="well">
+			
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane active in" id="login">
+					<form class="form-horizontal" action='' method="POST">
+						<fieldset>
+							<div id="legend">
+								<legend class="">SignUP</legend>
+							</div>    
+							<div class="control-group">
+								<!-- Username -->
+								<label class="control-label"  for="username">Username</label>
+								<div class="controls">
+									<input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+								</div>
+							</div>
+							
+							<div class="control-group">
+								<!-- Password-->
+								<label class="control-label" for="password">Password</label>
+								<div class="controls">
+									<input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+								</div>
+							</div>
+								<div class="control-group">
+								<!--FirstName-->
+								<label class="control-label" for="firstname">FirstName</label>
+								<div class="controls">
+									<input type="firstnam" id="firstname" name="firstname" placeholder="" class="input-xlarge">
+								</div>
+							</div>	<div class="control-group">
+								<!-- Last NAME-->
+								<label class="control-label" for="lastname">LastName</label>
+								<div class="controls">
+									<input type="lastname" id="lastname" name="lastname" placeholder="" class="input-xlarge">
+								</div>
+							</div>	<div class="control-group">
+								<!-- Email-->
+								<label class="control-label" for="email">Email</label>
+								<div class="controls">
+									<input type="email" id="email" name="email" placeholder="" class="input-xlarge">
+								</div>
+							</div>
+							
+							<div class="control-group">
+								<!-- Button -->
+								<div class="controls">
+									<button class="btn btn-success">SignUP</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>                
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+      <hr>
+
+      <footer>
+        <p>© San Jose State University 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./files/jquery.min.js"></script>
+    <script src="./files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./files/ie10-viewport-bug-workaround.js"></script>
+  <script>
+  function GetAlert()
+  {
+  alert("Please connect to database");
+  }
+</script>
+</body></html>
